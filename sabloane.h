@@ -82,6 +82,11 @@ T valoareMaiMare(T a, T b)
 {
     return (a > b) ? a : b;
 }
+template <typename T>
+T castigPotential(T miza, T cota)
+{
+    return miza * cota;
+}
 
 inline void demonstrareSabloane() 
 {
@@ -111,6 +116,9 @@ inline void demonstrareSabloane()
 
     int goluriMaiMulte = valoareMaiMare(2, 4);
     double cotaMaiMare = valoareMaiMare(1.80, 2.15);
+
+    double castig1 = castigPotential(100.0, 1.85);
+    int castig2 = castigPotential(50, 2);
 
     (void)totalGoluri;
     (void)maxGoluri;
